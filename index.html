@@ -3,20 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Brawl Stars Insider — Новости, Киберспорт, Обновления, QR-Халява</title>
-    <link rel="icon" type="image/png" href="https://static.wikia.nocookie.net/brawlstars/images/5/5b/Brawl_Stars_Icon.png/revision/latest?cb=20190630032227">
+    <title>Brawl Stars Hub — Новости, Киберспорт, QR-халява</title>
+    
+    <!-- МЕТА-ТЕГИ ДЛЯ ПРЕВЬЮ ССЫЛКИ (АВАТАРКА САЙТА) -->
+    <meta property="og:title" content="Brawl Stars Hub">
+    <meta property="og:description" content="Актуальные новости, киберспорт, обновления и халявные QR-ваучеры Brawl Stars. Автообновление каждые 10 минут.">
+    <meta property="og:type" content="website">
+    <!-- ВСТРОЕННАЯ КАРТИНКА (base64 PNG) — всегда грузится -->
+    <meta property="og:image" content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAAF8GlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDUgNzkuMTYzNDk5LCAyMDE4LzA4LzEzLTE2OjQwOjIyICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjAwMDAwMDAwLTAwMDAtMDAwMC0wMDAwLTAwMDAwMDAwMDAwMCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpDRkY5NzA2RkI5NkExMUVBQTQ4Qzk0MzE2QzVBNjU5RiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpDRkY5NzA2RUI5NkExMUVBQTQ4Qzk0MzE2QzVBNjU5RiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOSAoV2luZG93cykiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowMDAwMDAwMC0wMDAwLTAwMDAtMDAwMC0wMDAwMDAwMDAwMDAiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAwIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+gfRChQAAAIVJREFUeJzt2jENwCAQBFGyKQmVkBpSIzWQGlIjNVBSAgFV+zYzZ8FbyPSTmNnsbWZmZmZmZma237hAIZA5S+U8pXKeUjlPqZynVM5TKucplfOUynlK5Tylcp5SOU+pnKdUzlMq5ymV85TKeUrlPKVynlI5T6mcp1TOUyrnKZXzlMp5SuU8pXKeUjlPqZynVM5TKucplfOUynlK5Tylcp5SOU+pnKdUzlMq5ymV85TKeUrlPKVynlI5T6mcp1TOUyrnKZXzlMp5SuU8pXKeUjlPqZynVM5TKucplfOUynlK5Tylcp5SOU+pnKfU5J/4B/GOpSfcU8zSAAAAAElFTkSuQmCC">
+    <!-- Дополнительно для Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Brawl Stars Hub">
+    <meta name="twitter:description" content="Актуальные новости, киберспорт, обновления и халявные QR-ваучеры Brawl Stars.">
+    <meta name="twitter:image" content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAAF8GlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDUgNzkuMTYzNDk5LCAyMDE4LzA4LzEzLTE2OjQwOjIyICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjAwMDAwMDAwLTAwMDAtMDAwMC0wMDAwLTAwMDAwMDAwMDAwMCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpDRkY5NzA2RkI5NkExMUVBQTQ4Qzk0MzE2QzVBNjU5RiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpDRkY5NzA2RUI5NkExMUVBQTQ4Qzk0MzE2QzVBNjU5RiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOSAoV2luZG93cykiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowMDAwMDAwMC0wMDAwLTAwMDAtMDAwMC0wMDAwMDAwMDAwMDAiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAwIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+gfRChQAAAIVJREFUeJzt2jENwCAQBFGyKQmVkBpSIzWQGlIjNVBSAgFV+zYzZ8FbyPSTmNnsbWZmZmZmZma237hAIZA5S+U8pXKeUjlPqZynVM5TKucplfOUynlK5Tylcp5SOU+pnKdUzlMq5ymV85TKeUrlPKVynlI5T6mcp1TOUyrnKZXzlMp5SuU8pXKeUjlPqZynVM5TKucplfOUynlK5Tylcp5SOU+pnKdUzlMq5ymV85TKeUrlPKVynlI5T6mcp1TOUyrnKZXzlMp5SuU8pXKeUjlPqZynVM5TKucplfOUynlK5Tylcp5SOU+pnKfU5J/4B/GOpSfcU8zSAAAAAElFTkSuQmCC">
+    
+    <!-- favicon (иконка вкладки) тоже встроенная -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23ffaa33'/%3E%3Ctext x='50' y='70' font-size='50' text-anchor='middle' fill='%231a1a2e' font-weight='bold'%3E⚡%3C/text%3E%3C/svg%3E">
+    
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', 'Segoe UI', system-ui, 'Roboto', sans-serif; }
         body {
-            background-color: #0a0c14;
+            background: #0a0c14;
             min-height: 100vh;
             padding: 20px;
-            background-image: url('https://static.wikia.nocookie.net/brawlstars/images/5/5b/Brawl_Stars_Icon.png/revision/latest?cb=20190630032227');
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-attachment: fixed;
-            background-size: 70vmin;
-            background-blend-mode: overlay;
+            background-image: radial-gradient(circle at 10% 20%, rgba(255, 180, 68, 0.08) 2%, transparent 2.5%),
+                              radial-gradient(circle at 80% 70%, rgba(255, 180, 68, 0.05) 1.5%, transparent 2%);
+            background-size: 50px 50px, 80px 80px;
+            background-position: 0 0, 20px 30px;
         }
         .container { max-width: 1400px; margin: 0 auto; position: relative; z-index: 2; }
         .header {
@@ -26,8 +39,12 @@
             box-shadow: 0 12px 30px rgba(0,0,0,0.3);
         }
         .logo-area { display: flex; align-items: center; gap: 16px; }
-        .avatar-icon { width: 64px; height: 64px; background: transparent; border-radius: 60%; display: flex; align-items: center; justify-content: center; overflow: hidden; border: 2px solid #ffb347; box-shadow: 0 0 12px rgba(255,180,70,0.5); }
-        .avatar-icon img { width: 100%; height: 100%; object-fit: cover; }
+        .avatar-icon {
+            width: 64px; height: 64px; background: linear-gradient(145deg, #ffb347, #ff7e05);
+            border-radius: 60%; display: flex; align-items: center; justify-content: center;
+            border: 2px solid #ffdd99; box-shadow: 0 0 12px rgba(255, 180, 70, 0.6);
+            font-size: 2rem; color: #1e1a2f;
+        }
         .title-text h1 { font-size: 2rem; background: linear-gradient(135deg, #FFE6B0, #FFB347); -webkit-background-clip: text; background-clip: text; color: transparent; }
         .title-text p { color: #e0e6f5; font-weight: 500; }
         .badge-date { background: #1f2a3ecc; padding: 8px 20px; border-radius: 40px; font-size: 0.85rem; border: 1px solid #ffaa4480; color: #f5e6d3; }
@@ -56,7 +73,6 @@
         .source-link { margin-top: 12px; font-size: 0.7rem; color: #ffaa66; text-align: right; }
         .source-link a { color: #ffaa66; text-decoration: none; }
         .footer { margin-top: 50px; text-align: center; padding: 24px; border-top: 1px solid rgba(255,180,70,0.3); font-size: 0.8rem; color: #9aaec5; }
-        .footer a { color: #ffaa66; text-decoration: none; }
         @media (max-width: 760px) {
             .header { flex-direction: column; text-align: center; }
             .news-title { font-size: 1.2rem; }
@@ -85,88 +101,76 @@
 <div class="container">
     <div class="header">
         <div class="logo-area">
-            <div class="avatar-icon"><img src="https://static.wikia.nocookie.net/brawlstars/images/5/5b/Brawl_Stars_Icon.png/revision/latest?cb=20190630032227" alt="Brawl Stars icon"></div>
-            <div class="title-text"><h1><i class="fas fa-bolt"></i> BRAWL STARS INSIDER</h1><p>Новости • Киберспорт • Обновления • QR-халява</p></div>
+            <div class="avatar-icon"><i class="fas fa-skull"></i></div>
+            <div class="title-text"><h1><i class="fas fa-bolt"></i> BRAWL STARS HUB</h1><p>Новости • Киберспорт • Обновления • QR-халява</p></div>
         </div>
-        <div class="badge-date"><i class="far fa-calendar-alt"></i> Автообновление каждые 10 минут | Актуально: июнь 2026</div>
+        <div class="badge-date"><i class="far fa-calendar-alt"></i> Автообновление каждые 10 минут</div>
     </div>
 
     <div class="tabs">
         <button class="tab-btn active" data-tab="news"><i class="fas fa-newspaper"></i> Новости</button>
         <button class="tab-btn" data-tab="esports"><i class="fas fa-trophy"></i> Киберспорт</button>
         <button class="tab-btn" data-tab="updates"><i class="fas fa-code-branch"></i> Обновления</button>
-        <button class="tab-btn" data-tab="freebies"><i class="fas fa-gift"></i> Ваучеры (QR)</button>
+        <button class="tab-btn" data-tab="freebies"><i class="fas fa-qrcode"></i> QR-ваучеры</button>
         <button class="tab-btn" data-tab="tips"><i class="fas fa-lightbulb"></i> Гайды</button>
     </div>
 
-    <!-- НОВОСТИ -->
     <div id="news" class="tab-content active">
-        <div class="section-title"><i class="fas fa-rss"></i> Последние новости Brawl Stars <span class="update-time" id="news-update-time"></span><i class="fas fa-sync-alt refresh-icon" id="refresh-news" title="Обновить"></i></div>
+        <div class="section-title"><i class="fas fa-rss"></i> Последние новости <span class="update-time" id="news-update-time"></span><i class="fas fa-sync-alt refresh-icon" id="refresh-news" title="Обновить"></i></div>
         <div id="news-container" class="card-grid"><div class="loading-placeholder"><span class="spinner"></span> Загрузка новостей...</div></div>
     </div>
 
-    <!-- КИБЕРСПОРТ -->
     <div id="esports" class="tab-content">
-        <div class="section-title"><i class="fas fa-trophy"></i> Киберспорт — Brawl Stars Championship 2026 <span class="update-time" id="esports-update-time"></span><i class="fas fa-sync-alt refresh-icon" id="refresh-esports" title="Обновить"></i></div>
+        <div class="section-title"><i class="fas fa-trophy"></i> Киберспорт <span class="update-time" id="esports-update-time"></span><i class="fas fa-sync-alt refresh-icon" id="refresh-esports" title="Обновить"></i></div>
         <div id="esports-container" class="card-grid"><div class="loading-placeholder"><span class="spinner"></span> Загрузка...</div></div>
     </div>
 
-    <!-- ОБНОВЛЕНИЯ -->
     <div id="updates" class="tab-content">
-        <div class="section-title"><i class="fas fa-code-branch"></i> Примечания к обновлениям <span class="update-time" id="updates-update-time"></span><i class="fas fa-sync-alt refresh-icon" id="refresh-updates" title="Обновить"></i></div>
+        <div class="section-title"><i class="fas fa-code-branch"></i> Обновления <span class="update-time" id="updates-update-time"></span><i class="fas fa-sync-alt refresh-icon" id="refresh-updates" title="Обновить"></i></div>
         <div id="updates-container" class="card-grid"><div class="loading-placeholder"><span class="spinner"></span> Загрузка...</div></div>
     </div>
 
-    <!-- QR-ВАУЧЕРЫ -->
     <div id="freebies" class="tab-content">
-        <div class="section-title"><i class="fas fa-qrcode"></i> QR-ваучеры — наведи камеру или нажми</div>
+        <div class="section-title"><i class="fas fa-qrcode"></i> Халявные QR-ваучеры</div>
         <div id="vouchers-grid" class="card-grid"></div>
-        <div style="text-align: center; margin-top: 20px; color:#aaa; font-size:0.8rem;"><i class="fas fa-info-circle"></i> Требуется вход через Supercell ID.</div>
+        <div style="text-align: center; margin-top: 20px; color:#aaa; font-size:0.8rem;"><i class="fas fa-info-circle"></i> Нажми «Открыть» или наведи камеру. Требуется Supercell ID.</div>
     </div>
 
-    <!-- ГАЙДЫ -->
     <div id="tips" class="tab-content">
-        <div class="section-title"><i class="fas fa-microchip"></i> Полезные гайды</div>
+        <div class="section-title"><i class="fas fa-microchip"></i> Гайды</div>
         <div class="card-grid">
-            <div class="tip-card"><h3><i class="fas fa-charging-station"></i> Болт — гайд</h3><p>Танк, чья сила зависит от скорости. Используйте гаджет «Ускоритель» и держитесь на открытых пространствах.</p></div>
-            <div class="tip-card"><h3><i class="fas fa-trophy"></i> Trophy Rush</h3><p>Событие с двойными трофеями: активируйте таймер на 20 минут и играйте с друзьями.</p></div>
-            <div class="tip-card"><h3><i class="fas fa-dollar-sign"></i> Копим гемы</h3><p>Бесплатная дорожка Brawl Pass + клубные битвы дают до 110 гемов в месяц.</p></div>
+            <div class="tip-card"><h3><i class="fas fa-charging-station"></i> Болт — гайд</h3><p>Танк, сила зависит от скорости. Гаджет «Ускоритель» — must have.</p></div>
+            <div class="tip-card"><h3><i class="fas fa-trophy"></i> Trophy Rush</h3><p>Двойные трофеи 20 минут. Играйте в Brawl Ball или Knockout.</p></div>
+            <div class="tip-card"><h3><i class="fas fa-dollar-sign"></i> Копим гемы</h3><p>Бесплатный Brawl Pass + клуб дают до 110 гемов в месяц.</p></div>
         </div>
     </div>
 
     <div class="footer">
-        <i class="fas fa-dice-d6"></i> Brawl Stars Insider — официальные новости Supercell + агрегация с APKMirror, EGW.News, Liquipedia, Sport.ua.<br>
-        Автообновление раз в 10 минут. Если новости не загрузились — нажмите на иконку обновления (⟳).
+        <i class="fas fa-dice-d6"></i> Brawl Stars Hub — новости из официальных источников. Автообновление раз в 10 минут.
     </div>
 </div>
 
 <script>
-    // ===================== НОВОСТИ (АКТУАЛЬНЫЕ ДАННЫЕ ИЮНЬ 2026) =====================
     const NEWS_DATA = {
         news: [
-            { title: "⚡ Болт — 104-й боец уже в игре!", date: "12 июня 2026", desc: "Новый эпический боец-танк с механикой урона от скорости. Ивент Formula Brawl завершился, Болта можно получить через Bolt Boxes (гарант на 12-м ящике) или в магазине.", source: "Supercell / LDPlayer", link: "https://ru.ldplayer.net/blog/bolt-v-brawl-stars-luchshii-bild-gadzhet-i-zvyozdnaya-sila.html" },
-            { title: "🏎️ Итоги Formula Brawl: раздача Chaos Drops", date: "8–12 июня 2026", desc: "Заключительная гонка прошла 12 июня. Заберите награды до 15 июня 08:00 UTC. Максимально можно получить 15 Chaos Drops.", source: "Supercell", link: "https://supercell.com/en/games/brawlstars/blog/news/the-formula-brawl-event-is-here/" },
-            { title: "🏆 NAVI вышли в финал Brawl Stars Championship 2026", date: "8 июня 2026", desc: "NAVI прошли квалификацию через нижнюю сетку, обыграв Fenris (3:1), и вышли на June Monthly Finals 14 июня. Призовой фонд $42 000.", source: "Sport.ua", link: "https://sport.ua/news/877623-navi-vyshli-v-final-brawl-stars-championship-2026" },
-            { title: "🛒 Обновление 67.306: полный реворк магазина", date: "Июнь 2026", desc: "Три новых бойца (Дамиан, Старр Нова, Болт), лавка Джуджу, режим Super Ball 2.0 с ИИ-вратарями и баффы для Эдгара, Колетт, Гриффа.", source: "APKMirror", link: "https://www.apkmirror.com/apk/supercell/brawl-stars/brawl-stars-67-306-release/" },
-            { title: "⚖️ Утечка: баланс-патч на 40+ бойцов", date: "Июнь 2026", desc: "По данным Chosen Network, Пайпер (+600 здоровья, +200 урона), Мэнди, Гейл, Тара и Старр Нова получат усиления. Кроу, Леон, Мортис и Эдгар — ослабления.", source: "EGW.News", link: "https://rus.egw.news/gaming/news/35133/massive-brawl-stars-balance-changes-leak-reveals-b-iajbgoEXx" },
-            { title: "🎨 Опрос о скинах: Киберпанк, Созвездия, Биодом", date: "12 июня 2026", desc: "Supercell показала концепты скинов для 8 бойцов. Итоговый релиз не гарантирован.", source: "EGW.News", link: "https://rus.egw.news/gaming/news/35465/brawl-stars-survey-teases-potential-new-seasonal-s-4yXN8Z-FX" },
-            { title: "🏎️ Расписание гонок Formula Brawl", date: "7–12 июня", desc: "Гонка 1: 8 июня, Гонка 2: 10 июня, Гонка 3: 12 июня, 15:00 UTC. Трансляции на YouTube.", source: "EGW.News", link: "https://rus.egw.news/gaming/news/35333/brawl-stars-launches-formula-brawl-event-ahead-of--OOwzG-pTw" }
+            { title: "⚡ Болт — 104-й боец уже в игре!", date: "12 июня 2026", desc: "Новый эпический боец-танк с механикой урона от скорости.", source: "Supercell", link: "https://supercell.com/en/games/brawlstars/" },
+            { title: "🏎️ Итоги Formula Brawl: раздача Chaos Drops", date: "8–12 июня 2026", desc: "Заберите награды до 15 июня. Максимум 15 Chaos Drops.", source: "Supercell", link: "https://supercell.com/en/games/brawlstars/blog/news/the-formula-brawl-event-is-here/" },
+            { title: "🏆 NAVI вышли в финал Brawl Stars Championship 2026", date: "8 июня 2026", desc: "NAVI прошли квалификацию и вышли на June Monthly Finals 14 июня.", source: "Sport.ua", link: "https://sport.ua/news/877623-navi-vyshli-v-final-brawl-stars-championship-2026" },
+            { title: "🛒 Обновление 67.306: полный реворк магазина", date: "Июнь 2026", desc: "Три новых бойца (Дамиан, Старр Нова, Болт), лавка Джуджу.", source: "APKMirror", link: "https://www.apkmirror.com/apk/supercell/brawl-stars/brawl-stars-67-306-release/" },
+            { title: "⚖️ Утечка: баланс-патч на 40+ бойцов", date: "Июнь 2026", desc: "Пайпер, Мэнди, Гейл получат усиления. Кроу, Леон — ослабления.", source: "EGW.News", link: "https://rus.egw.news/gaming/news/35133/" }
         ],
         esports: [
-            { title: "🌏 East Asia Monthly Finals: ZETA — чемпионы", date: "13–14 июня 2026", desc: "ZETA (Sitetampo, Tensai, Achapi) разгромили RVL 3:0. Финал прошёл в Токио. Sitetampo признан MVP.", source: "Bilibili / Liquipedia", link: "https://www.bilibili.com/video/BV1H8Js6tE1K/" },
-            { title: "🏆 Brawl Stars Championship 2026: формат и призовые", date: "2026", desc: "Общий призовой фонд — $1 060 452. Ежемесячные финалы: $42 000 + рейтинговые очки. Мировой финал — в Токио.", source: "Liquipedia", link: "https://liquipedia.net/brawlstars/Brawl_Stars_Championship/2026/Overview" },
-            { title: "🇪🇺 EMEA Monthly Finals: расписание", date: "14 июня 2026", desc: "8 команд разыгрывают $42 000. NAVI прошли квалификацию.", source: "Liquipedia", link: "https://liquipedia.net/brawlstars/Brawl_Stars_Championship/2026/Season_4/EMEA/Monthly_Finals" },
-            { title: "🎤 Интервью с разработчиками: изменения в BSC 2026", date: "2026", desc: "Система подбора карт, глобальные запреты. Brawl Cup в Берлине 15–17 мая.", source: "Supercell", link: "https://supercell.com/en/games/brawlstars/ru/blog/esports/%D0%BF%D0%B5%D1%80%D0%B2%D1%8B%D0%B9-%D0%B2%D0%B7%D0%B3%D0%BB%D1%8F%D0%B4-%D0%BD%D0%B0-bsc-2026/" }
+            { title: "🌏 East Asia Monthly Finals: ZETA — чемпионы", date: "13–14 июня 2026", desc: "ZETA разгромили RVL 3:0. Sitetampo MVP.", source: "Liquipedia", link: "https://liquipedia.net/brawlstars/" },
+            { title: "🏆 Brawl Stars Championship 2026: формат и призовые", date: "2026", desc: "Призовой фонд $1 060 452. Мировой финал в Токио.", source: "Liquipedia", link: "https://liquipedia.net/brawlstars/Brawl_Stars_Championship/2026/Overview" },
+            { title: "🇪🇺 EMEA Monthly Finals: расписание", date: "14 июня 2026", desc: "8 команд разыгрывают $42 000. NAVI в числе участников.", source: "Liquipedia", link: "https://liquipedia.net/brawlstars/Brawl_Stars_Championship/2026/Season_4/EMEA/Monthly_Finals" }
         ],
         updates: [
-            { title: "Обновление 67.306: что нового", date: "Июнь 2026", desc: "Массовый реворк магазина (лавка Джуджу), 3 новых бойца: Дамиан (Mythic Tank), Старр Нова (Mythic Assassin), Болт (Epic Tank). Режим Super Ball 2.0, баффы для Эдгара, Колетт, Гриффа.", source: "APKMirror", link: "https://www.apkmirror.com/apk/supercell/brawl-stars/brawl-stars-67-306-release/" },
-            { title: "Баланс-патч: утечка усилений", date: "Июнь 2026", desc: "Пайпер: здоровье 5000→5600, урон 3400→3600. Мэнди: урон 2600→2960. Старр Нова: здоровье 7400→7600, урон 1080→1320. Ослабления: Кроу, Леон, Мортис, Эдгар.", source: "EGW.News", link: "https://rus.egw.news/gaming/news/35133/massive-brawl-stars-balance-changes-leak-reveals-b-iajbgoEXx" },
-            { title: "Событие Trophy Rush — двойные трофеи", date: "13–14 июня 2026", desc: "В течение 20 минут после активации за победы дают двойные трофеи. Лучшие режимы: Brawl Ball, Knockout, Showdown.", source: "EGW.News", link: "https://rus.egw.news/gaming/news/35466/brawl-stars-launches-trophy-rush-event-with-double-dkbuylCju" },
-            { title: "Brawl Pass Season 51: Brawl Strikers", date: "Июнь 2026", desc: "Футбольный сезон. Новые скины Super Ball для Джина и Карла в пропуске, легендарный скин Super Striker Lou.", source: "APKMirror", link: "https://www.apkmirror.com/apk/supercell/brawl-stars/brawl-stars-67-306-release/" }
+            { title: "Обновление 67.306: что нового", date: "Июнь 2026", desc: "Режим Super Ball 2.0, баффы Эдгара, Колетт, Гриффа.", source: "APKMirror", link: "https://www.apkmirror.com/apk/supercell/brawl-stars/brawl-stars-67-306-release/" },
+            { title: "Баланс-патч: утечка усилений", date: "Июнь 2026", desc: "Пайпер: здоровье 5000→5600, урон 3400→3600.", source: "EGW.News", link: "https://rus.egw.news/gaming/news/35133/" },
+            { title: "Событие Trophy Rush", date: "13–14 июня 2026", desc: "Двойные трофеи на 20 минут.", source: "EGW.News", link: "https://rus.egw.news/gaming/news/35466/" }
         ]
     };
 
-    // ===================== QR-ВАУЧЕРЫ =====================
     const voucherLinks = [
         "https://link.brawlstars.com/voucher/e4a3bb44-95fd-48d1-9fe6-378619bf2eb9",
         "https://supr.cl/freewhitespraypin",
@@ -186,7 +190,6 @@
     ];
     const uniqueVouchers = [...new Map(voucherLinks.map(l => [l,l])).values()];
 
-    // ===================== ОТРИСОВКА =====================
     function renderNews(category, containerId, timeSpanId) {
         const container = document.getElementById(containerId);
         if (!container) return;
@@ -205,8 +208,10 @@
             </div>`;
         }
         container.innerHTML = html;
-        const timeSpan = document.getElementById(timeSpanId);
-        if (timeSpan) timeSpan.innerHTML = `<i class="fas fa-clock"></i> обновлено: ${new Date().toLocaleTimeString('ru-RU')}`;
+        if (timeSpanId) {
+            const span = document.getElementById(timeSpanId);
+            if (span) span.innerHTML = `<i class="fas fa-clock"></i> обновлено: ${new Date().toLocaleTimeString('ru-RU')}`;
+        }
     }
 
     function renderVouchers() {
@@ -221,7 +226,7 @@
             card.innerHTML = `<div class="voucher-number">📱 QR-ваучер #${idx+1}</div>
                 <div class="voucher-link"><a href="${link}" target="_blank">${link.length>60?link.substring(0,55)+'…':link}</a>
                 <a href="${link}" target="_blank" class="reward-btn">Открыть →</a></div>
-                <div style="font-size:0.7rem; margin-top:8px; color:#aaa;">Наведи камеру телефона на ссылку или нажми "Открыть"</div>`;
+                <div style="font-size:0.7rem; margin-top:8px; color:#aaa;">Наведи камеру телефона или нажми "Открыть"</div>`;
             container.appendChild(card);
         });
     }
