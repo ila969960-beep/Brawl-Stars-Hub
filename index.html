@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Brawl Stars Insider — Новости, Киберспорт, Промокоды (Реалтайм)</title>
+    <title>Brawl Stars Insider — Новости, Киберспорт, Обновления, QR-Халява</title>
     <link rel="icon" type="image/png" href="https://static.wikia.nocookie.net/brawlstars/images/5/5b/Brawl_Stars_Icon.png/revision/latest?cb=20190630032227">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', 'Segoe UI', system-ui, 'Roboto', sans-serif; }
@@ -44,18 +44,19 @@
         @keyframes fadeUp { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
         .section-title { font-size: 1.8rem; margin-bottom: 28px; padding-left: 20px; border-left: 6px solid #ffaa44; font-weight: 700; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; color: #ffecce; }
         .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 26px; margin-bottom: 40px; }
-        .news-card, .tip-card, .voucher-card, .promo-card {
+        .news-card, .tip-card, .voucher-card {
             background: rgba(20,26,40,0.85); backdrop-filter: blur(12px); border-radius: 36px; padding: 24px;
             border: 1px solid rgba(255,180,80,0.3); transition: all 0.2s; box-shadow: 0 8px 18px rgba(0,0,0,0.3);
             color: #f0f3fc;
         }
-        .news-card:hover, .tip-card:hover, .voucher-card:hover, .promo-card:hover { transform: translateY(-6px); border-color: #ffae42; background: rgba(32,40,60,0.95); }
+        .news-card:hover, .tip-card:hover, .voucher-card:hover { transform: translateY(-6px); border-color: #ffae42; background: rgba(32,40,60,0.95); }
         .news-title { font-size: 1.4rem; font-weight: 700; margin-bottom: 10px; background: linear-gradient(135deg, #FFDD99, #FFAA55); -webkit-background-clip: text; background-clip: text; color: transparent; }
         .news-date { font-size: 0.75rem; color: #adbbdd; margin-bottom: 12px; display: flex; gap: 12px; align-items: center; }
         .news-desc { line-height: 1.5; color: #e2e9fc; }
         .source-link { margin-top: 12px; font-size: 0.7rem; color: #ffaa66; text-align: right; }
         .source-link a { color: #ffaa66; text-decoration: none; }
         .footer { margin-top: 50px; text-align: center; padding: 24px; border-top: 1px solid rgba(255,180,70,0.3); font-size: 0.8rem; color: #9aaec5; }
+        .footer a { color: #ffaa66; text-decoration: none; }
         @media (max-width: 760px) {
             .header { flex-direction: column; text-align: center; }
             .news-title { font-size: 1.2rem; }
@@ -63,78 +64,67 @@
             .section-title { font-size: 1.3rem; }
             .card-grid { grid-template-columns: 1fr; }
         }
-        .tip-card h3, .promo-card h3 { font-size: 1.3rem; color: #FFCD7E; margin-bottom: 12px; }
-        .voucher-link, .promo-link {
+        .tip-card h3 { font-size: 1.3rem; color: #FFCD7E; margin-bottom: 12px; }
+        .voucher-link {
             display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;
             background: #0a0f1ae0; border-radius: 60px; padding: 12px 18px; margin-top: 8px; border-left: 4px solid #ffaa55;
         }
-        .voucher-link a, .promo-link a { color: #ffcc88; text-decoration: none; word-break: break-all; font-size: 0.8rem; flex: 1; }
+        .voucher-link a { color: #ffcc88; text-decoration: none; word-break: break-all; font-size: 0.8rem; flex: 1; }
         .reward-btn { background: #ffaa33; border: none; padding: 6px 18px; border-radius: 40px; font-weight: bold; color: #1a1a2e; cursor: pointer; text-decoration: none; font-size: 0.8rem; white-space: nowrap; }
-        .voucher-number, .promo-code { font-size: 0.8rem; font-weight: bold; color: #ffcc88; margin-bottom: 8px; font-family: monospace; background: #00000040; display: inline-block; padding: 4px 12px; border-radius: 20px; }
+        .voucher-number { font-size: 0.8rem; font-weight: bold; color: #ffcc88; margin-bottom: 8px; font-family: monospace; background: #00000040; display: inline-block; padding: 4px 12px; border-radius: 20px; }
         .loading-placeholder { color: #aaa; text-align: center; padding: 2rem; }
         .refresh-icon { cursor: pointer; margin-left: 12px; font-size: 1rem; color: #ffaa55; }
         .update-time { font-size: 0.7rem; color: #88aaff; margin-left: 15px; }
         .spinner { display: inline-block; width: 16px; height: 16px; border: 2px solid rgba(255,255,255,0.3); border-radius: 50%; border-top-color: #ffaa55; animation: spin 0.8s linear infinite; margin-right: 8px; vertical-align: middle; }
         @keyframes spin { to { transform: rotate(360deg); } }
-        .new-badge { background: #ff4444cc; border-radius: 50px; padding: 2px 10px; font-size: 0.7rem; font-weight: bold; margin-left: 10px; }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="container">
-    <!-- ШАПКА -->
     <div class="header">
         <div class="logo-area">
             <div class="avatar-icon"><img src="https://static.wikia.nocookie.net/brawlstars/images/5/5b/Brawl_Stars_Icon.png/revision/latest?cb=20190630032227" alt="Brawl Stars icon"></div>
-            <div class="title-text"><h1><i class="fas fa-bolt"></i> BRAWL STARS INSIDER</h1><p>Новости • Киберспорт • Промокоды • Обновления (Реалтайм)</p></div>
+            <div class="title-text"><h1><i class="fas fa-bolt"></i> BRAWL STARS INSIDER</h1><p>Новости • Киберспорт • Обновления • QR-халява</p></div>
         </div>
         <div class="badge-date"><i class="far fa-calendar-alt"></i> Автообновление каждые 10 минут | Актуально: июнь 2026</div>
     </div>
 
-    <!-- НАВИГАЦИЯ -->
     <div class="tabs">
         <button class="tab-btn active" data-tab="news"><i class="fas fa-newspaper"></i> Новости</button>
         <button class="tab-btn" data-tab="esports"><i class="fas fa-trophy"></i> Киберспорт</button>
         <button class="tab-btn" data-tab="updates"><i class="fas fa-code-branch"></i> Обновления</button>
-        <button class="tab-btn" data-tab="promocodes"><i class="fas fa-ticket-alt"></i> Промокоды</button>
         <button class="tab-btn" data-tab="freebies"><i class="fas fa-gift"></i> Ваучеры (QR)</button>
         <button class="tab-btn" data-tab="tips"><i class="fas fa-lightbulb"></i> Гайды</button>
     </div>
 
-    <!-- ВКЛАДКА: НОВОСТИ (ОФИЦИАЛЬНЫЕ + АГРЕГАЦИЯ) -->
+    <!-- НОВОСТИ -->
     <div id="news" class="tab-content active">
         <div class="section-title"><i class="fas fa-rss"></i> Последние новости Brawl Stars <span class="update-time" id="news-update-time"></span><i class="fas fa-sync-alt refresh-icon" id="refresh-news" title="Обновить"></i></div>
-        <div id="news-container" class="card-grid"><div class="loading-placeholder"><span class="spinner"></span> Загрузка новостей из официальных источников...</div></div>
+        <div id="news-container" class="card-grid"><div class="loading-placeholder"><span class="spinner"></span> Загрузка новостей...</div></div>
     </div>
 
-    <!-- ВКЛАДКА: КИБЕРСПОРТ (BSC 2026) -->
+    <!-- КИБЕРСПОРТ -->
     <div id="esports" class="tab-content">
         <div class="section-title"><i class="fas fa-trophy"></i> Киберспорт — Brawl Stars Championship 2026 <span class="update-time" id="esports-update-time"></span><i class="fas fa-sync-alt refresh-icon" id="refresh-esports" title="Обновить"></i></div>
-        <div id="esports-container" class="card-grid"><div class="loading-placeholder"><span class="spinner"></span> Загрузка киберспортивных новостей...</div></div>
+        <div id="esports-container" class="card-grid"><div class="loading-placeholder"><span class="spinner"></span> Загрузка...</div></div>
     </div>
 
-    <!-- ВКЛАДКА: ОБНОВЛЕНИЯ / ПАТЧИ -->
+    <!-- ОБНОВЛЕНИЯ -->
     <div id="updates" class="tab-content">
         <div class="section-title"><i class="fas fa-code-branch"></i> Примечания к обновлениям <span class="update-time" id="updates-update-time"></span><i class="fas fa-sync-alt refresh-icon" id="refresh-updates" title="Обновить"></i></div>
-        <div id="updates-container" class="card-grid"><div class="loading-placeholder"><span class="spinner"></span> Загрузка информации об обновлениях...</div></div>
+        <div id="updates-container" class="card-grid"><div class="loading-placeholder"><span class="spinner"></span> Загрузка...</div></div>
     </div>
 
-    <!-- ВКЛАДКА: ПРОМОКОДЫ -->
-    <div id="promocodes" class="tab-content">
-        <div class="section-title"><i class="fas fa-ticket-alt"></i> Рабочие промокоды на июнь 2026</div>
-        <div class="card-grid" id="promocodes-grid"></div>
-        <div style="text-align: center; margin-top: 20px; color:#aaa; font-size:0.8rem;"><i class="fas fa-info-circle"></i> Активация на официальном сайте Supercell Store.</div>
-    </div>
-
-    <!-- ВКЛАДКА: QR-ВАУЧЕРЫ -->
+    <!-- QR-ВАУЧЕРЫ -->
     <div id="freebies" class="tab-content">
         <div class="section-title"><i class="fas fa-qrcode"></i> QR-ваучеры — наведи камеру или нажми</div>
         <div id="vouchers-grid" class="card-grid"></div>
         <div style="text-align: center; margin-top: 20px; color:#aaa; font-size:0.8rem;"><i class="fas fa-info-circle"></i> Требуется вход через Supercell ID.</div>
     </div>
 
-    <!-- ВКЛАДКА: ГАЙДЫ -->
+    <!-- ГАЙДЫ -->
     <div id="tips" class="tab-content">
         <div class="section-title"><i class="fas fa-microchip"></i> Полезные гайды</div>
         <div class="card-grid">
@@ -144,11 +134,14 @@
         </div>
     </div>
 
-    <div class="footer"><i class="fas fa-dice-d6"></i> Brawl Stars Insider — официальные новости Supercell + агрегация с APKMirror, EGW.News, Liquipedia, Sport.ua.<br>Автообновление раз в 10 минут. Если новости не загрузились — нажмите на иконку обновления (⟳).</div>
+    <div class="footer">
+        <i class="fas fa-dice-d6"></i> Brawl Stars Insider — официальные новости Supercell + агрегация с APKMirror, EGW.News, Liquipedia, Sport.ua.<br>
+        Автообновление раз в 10 минут. Если новости не загрузились — нажмите на иконку обновления (⟳).
+    </div>
 </div>
 
 <script>
-    // ===================== НОВОСТИ (АКТУАЛЬНЫЕ ОФИЦИАЛЬНЫЕ ДАННЫЕ ИЮНЬ 2026) =====================
+    // ===================== НОВОСТИ (АКТУАЛЬНЫЕ ДАННЫЕ ИЮНЬ 2026) =====================
     const NEWS_DATA = {
         news: [
             { title: "⚡ Болт — 104-й боец уже в игре!", date: "12 июня 2026", desc: "Новый эпический боец-танк с механикой урона от скорости. Ивент Formula Brawl завершился, Болта можно получить через Bolt Boxes (гарант на 12-м ящике) или в магазине.", source: "Supercell / LDPlayer", link: "https://ru.ldplayer.net/blog/bolt-v-brawl-stars-luchshii-bild-gadzhet-i-zvyozdnaya-sila.html" },
@@ -173,25 +166,6 @@
         ]
     };
 
-    // ===================== ПРОМОКОДЫ (РАБОЧИЕ) =====================
-    const PROMOCODES = [
-        { code: "SAKURASPIKE", reward: "Гемы" },
-        { code: "23FNQUS4", reward: "Гемы" },
-        { code: "META3K", reward: "Гемы" },
-        { code: "ITSSUSHITIME", reward: "Гемы" },
-        { code: "BOBAPARTYYYY", reward: "Гемы" },
-        { code: "ZH8SJDF1", reward: "Гемы" },
-        { code: "avi", reward: "Гемы" },
-        { code: "BT1", reward: "Гемы" },
-        { code: "BR4WLER", reward: "Гемы" },
-        { code: "BRAWLSTARS10", reward: "Гемы" },
-        { code: "ALLFORLOVE14", reward: "Гемы" },
-        { code: "Brand New Day", reward: "Гемы" },
-        { code: "I love supercell", reward: "Гемы" },
-        { code: "Winner money", reward: "Гемы" },
-        { code: "Metal bull 2021", reward: "Гемы" }
-    ];
-
     // ===================== QR-ВАУЧЕРЫ =====================
     const voucherLinks = [
         "https://link.brawlstars.com/voucher/e4a3bb44-95fd-48d1-9fe6-378619bf2eb9",
@@ -212,7 +186,7 @@
     ];
     const uniqueVouchers = [...new Map(voucherLinks.map(l => [l,l])).values()];
 
-    // ===================== ОТРИСОВКА КАРТОЧЕК =====================
+    // ===================== ОТРИСОВКА =====================
     function renderNews(category, containerId, timeSpanId) {
         const container = document.getElementById(containerId);
         if (!container) return;
@@ -233,21 +207,6 @@
         container.innerHTML = html;
         const timeSpan = document.getElementById(timeSpanId);
         if (timeSpan) timeSpan.innerHTML = `<i class="fas fa-clock"></i> обновлено: ${new Date().toLocaleTimeString('ru-RU')}`;
-    }
-
-    function renderPromocodes() {
-        const container = document.getElementById('promocodes-grid');
-        if (!container) return;
-        container.innerHTML = '';
-        for (let promo of PROMOCODES) {
-            const card = document.createElement('div');
-            card.className = 'promo-card';
-            card.innerHTML = `<div class="promo-code">🎁 ${promo.code}</div>
-                <div class="promo-link"><span style="color:#ffcc88;">${promo.reward}</span>
-                <a href="https://store.supercell.com/en/code-redeem" target="_blank" class="reward-btn">Активировать →</a></div>
-                <div style="font-size:0.7rem; margin-top:8px; color:#aaa;">Активация на Supercell Store</div>`;
-            container.appendChild(card);
-        }
     }
 
     function renderVouchers() {
@@ -273,7 +232,6 @@
         renderNews('news', 'news-container', 'news-update-time');
         renderNews('esports', 'esports-container', 'esports-update-time');
         renderNews('updates', 'updates-container', 'updates-update-time');
-        renderPromocodes();
         renderVouchers();
     }
 
@@ -294,7 +252,6 @@
     document.addEventListener('DOMContentLoaded', () => {
         loadAll();
         initTabs();
-        // Автообновление каждые 10 минут (600000 мс)
         setInterval(loadAll, 600000);
         document.getElementById('refresh-news')?.addEventListener('click', () => renderNews('news', 'news-container', 'news-update-time'));
         document.getElementById('refresh-esports')?.addEventListener('click', () => renderNews('esports', 'esports-container', 'esports-update-time'));
